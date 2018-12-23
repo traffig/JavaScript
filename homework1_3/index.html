@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hamburger</title>
+</head>
+<body>
+<h3>Выбор гамбургера:</h3>
+<form action="#">
+    <label>Размер: <br><br>
+        <select id="hamburgerSize">
+            <option value="small" id="small" data-price="50" data-calory="20">Маленький (50 рублей, 20 калорий)</option>
+            <option value="big" id="big" data-price="100" data-calory="40">Большой (100 рублей, 40 калорий)</option>
+        </select>
+    </label>
+    <br><br>
+    <label>Количество гамбургеров<br><br>
+        <input id="quantity" type="number" min="1" value="1" size="10"></label>
+
+    <h3>Выбор начинки:</h3>
+
+    <label>- c сыром (10 рублей, 20 калорий)
+        <input type="radio" name="filling" data-price="10" data-calory="20"></label><br>
+
+    <label>- c салатом (20 рублей, 5 калорий)
+        <input type="radio" name="filling" data-price="20" data-calory="5"></label><br>
+
+    <label>- c картофелем (15 рублей, 10 калорий)
+        <input type="radio" name="filling" data-price="15" data-calory="10" checked></label><br>
+
+    <h3>Выбор дополнительных приправ:</h3>
+
+    <label>Посыпать приправой (15 рублей, 0 калорий)
+        <input type="checkbox" name="filling" data-price="15" data-calory="0"></label><br>
+
+    <label>Полить майонезом (20 рублей, 5 калорий)
+        <input type="checkbox" name="filling" data-price="20" data-calory="5"></label><br>
+
+    <p>Калорийность одного гамбургера: <span id="calory">0</span> калорий</p>
+    <p>Сумма заказа: <span id="price">0</span> рублей</p>
+</form>
+
+<button id="btnPrice">Рассчитать</button>
+
+<script src="Hamburger.js" defer></script>
+<script src="init.js" defer></script>
+
+</body>
+</html>

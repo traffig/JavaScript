@@ -1,0 +1,34 @@
+span{
+    color: red;
+}
+
+textarea{
+    resize: none;
+    padding: 10px;
+    margin: 20px;
+    float: left;
+}
+
+input{
+    padding: 10px;
+    margin: 20px;
+}
+
+#invalidMessage{
+    display: inline-block;
+    margin-top: 90px;
+}
+
+.clr{
+    clear: both;
+}
+
+.valid{
+    border: 3px solid forestgreen;
+    background: lawngreen;
+}
+
+.invalid{
+    border: 3px solid red;
+    background: palevioletred;
+}

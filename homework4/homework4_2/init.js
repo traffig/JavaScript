@@ -27,6 +27,6 @@ $.ajax({
         }
     },
     error: error => {
-        console.log('Ошибка!')
+        console.log(error);
     }
 });

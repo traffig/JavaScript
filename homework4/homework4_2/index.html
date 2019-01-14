@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form action="#" method="post" id="myform">
+    <label>
+        Ваше имя: <br>
+        <input type="text" id="name" placeholder="имя..."><span id="invalidName"></span>
+    </label> <br>
+    <label>
+        Ваш номер мобильного телефона: <br>
+        <input type="tel" id="numberPhone" placeholder="+7-xxx-xxx-xxxx"><span id="invalidPhone"></span>
+    </label> <br>
+    <label>Ваш город: <br>
+        <select id="city"></select></label><br>
+    <label>
+        Ваш Email: <br>
+        <input type="text" id="mail" placeholder="email@mail.ru"><span id="invalidMail"></span>
+    </label> <br>
+    <label>
+        Текст письма: <br>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="сообщение..."></textarea>
+        <span id="invalidMessage"></span>
+    </label><br>
+    <div class="clr"></div>
+    <button type="submit">Submit</button>
+</form>
+<script src="jquery-3.3.1.min.js" defer></script>
+<script src="Validation.js" defer></script>
+<script src="init.js" defer></script>
+</body>
+</html>
